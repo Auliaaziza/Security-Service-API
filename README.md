@@ -1,4 +1,4 @@
-# Security-Service-API
+# Punk Records-V1
 Project ini dibuat untuk memenuhi nilai akhir semester Mata Kuliah Keamanan dan Integritas Data. Program api.py merupakan layanan keamanan berbasis FastAPI yang mengimplementasikan mekanisme digital signature, JWT authentication, serta session-based security menggunakan MAC.
 
 # Anggota Kelompok:
