@@ -15,7 +15,7 @@ DATA_FILE = "users.json" #data user dan pub keyy
 SESSION_FILE = "sessions.json"  #data stella session
 PRIVATE_KEY = ec.generate_private_key(ec.SECP256R1()) #membuatprivate key ECDSA untuk menandatangani hash dokumen pdf
 
-app = FastAPI(title="Security Service", version="1.0.0") #inisialisasi aplikasi FastAPI
+app = FastAPI(title="Punk Records", version="1.0.0") #inisialisasi aplikasi FastAPI
 
 app.add_middleware( 
     CORSMiddleware,
@@ -86,7 +86,7 @@ def sign_pdf_hash(private_key, pdf_hash: bytes): #menandatangani hash PDF menggu
 async def landing_page():
     return """
     <html><body>
-    <h1>🔐 Security Service API</h1>
+    <h1> Punk Records-V1</h1>
     <button onclick="window.open('/docs', '_blank')">Open API Docs</button>
     </body></html>
     """
